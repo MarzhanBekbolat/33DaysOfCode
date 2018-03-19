@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class TrainTicket {
+
+    static String berthType(int n) {
+       ArrayList<Integer> LbList = new ArrayList<>();
+	    	LbList.add(1); LbList.add(4); LbList.add(9); LbList.add(12);
+	    	LbList.add(17); LbList.add(20); LbList.add(25); LbList.add(28);
+	    	LbList.add(33); LbList.add(36); LbList.add(41); LbList.add(44);
+	    	LbList.add(49); LbList.add(52); LbList.add(57); LbList.add(60);
+            LbList.add(65); LbList.add(68);
+	        if(LbList.contains(n)) {
+	        	return "LB";
+	        }
+            else if(LbList.contains(n-1)) {
+	        	return "MB";
+	        }
+            else if(LbList.contains(n-2)) {
+	        	return "UB";
+	        }
+            else if(n%8==0) {
+	        	return "SUB";
+	        }
+             else if((n+1)%8==0) {
+	        	return "SLB";
+	        }
+	        else {
+	        return "There is no such place";
+	        }
+
+
+    }
+    
+    private static final Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) {
+            int n = scan.nextInt();
+
+	        String result = berthType(n);
+
+	        System.out.println(result);
+	       
+
+	        scan.close();
+    }
+}
