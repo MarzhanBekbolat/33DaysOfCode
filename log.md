@@ -5,3 +5,6 @@
 # Day 2:
 - I have tried to solve some problems from hackerrank (most of them was wrong:( )
 - I complete only one of them, which was about constructing the number divisible by 3 from array elements
+# Day 4:
+- Binary search tree
+- Finding the minimum node in BST
