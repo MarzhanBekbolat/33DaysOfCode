@@ -1,0 +1,60 @@
+public class BSTNode {
+	int data;
+    BSTNode left;
+    BSTNode right;
+ 
+    public BSTNode(int node)
+    {
+        data = node;
+        left =null;
+        right = null;
+    }
+}
+
+
+
+public class BSTTop {
+    BSTNode root; // Root of BST
+ 
+    // If we have a BST and number, where to put the number in BST
+    BSTNode put(BSTNode node, int data) {
+        if (node == null) {
+            return (new BSTNode(data));
+        } 
+        
+        else {
+            if (data <= node.data) {
+                node.left = put(node.left, data);
+            } 
+            
+            else {
+                node.right = put(node.right, data);
+            }
+            return node;
+        }
+    }
+        
+        int min(BSTNode node) {
+        	BSTNode current = node;
+     
+            /* loop down to find the leftmost leaf */
+            while (current.left != null) {
+                current = current.left;
+            }
+            return (current.data);
+        }
+        
+        public static void main(String[] args) {
+            BSTTop tree = new BSTTop();
+            BSTNode root = null;
+            root = tree.put(root, 1);
+            tree.put(root, 4);
+            tree.put(root, 2);
+            tree.put(root, 3);
+            tree.put(root, 6);
+            tree.put(root, 5);
+     
+            System.out.println("The minimum value of BST is " + tree.min(root));
+        }
+    
+}
