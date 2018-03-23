@@ -1,0 +1,44 @@
+
+class BSTNode 
+{
+    int data;
+    BSTNode left, right;
+  
+    BSTNode(int item) 
+    {
+        data = item;
+        left = right = null;
+    }
+}
+  
+class BST 
+{
+     BSTNode root;
+  
+    int height(BSTNode node) 
+    {
+        if (node == null)
+            return 0;
+        else
+        {
+            if (left > right)
+                return (left + 1);
+             else
+                return (right + 1);
+        }
+    }
+      
+    public static void main(String[] args) 
+    {
+        BST tree = new BST();
+  
+        tree.root = new BSTNode(1);
+        tree.root.left = new BSTNode(2);
+        tree.root.right = new BSTNode(3);
+        tree.root.left.left = new BSTNode(4);
+        tree.root.left.right = new BSTNode(5);
+  
+        System.out.println("The height of the BST is: " + 
+                                      tree.height(tree.root));
+    }
+}
