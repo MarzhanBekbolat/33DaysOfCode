@@ -8,3 +8,7 @@
 # Day 4:
 - Binary search tree
 - Finding the minimum node in BST
+# Day 4:
+- New terminology: binary tree's node height and tree height
+- The concept of binary tree height calculation
+
