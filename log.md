@@ -11,4 +11,9 @@
 # Day 5:
 - New terminology: binary tree's node height and tree height
 - The concept of binary tree height calculation
+# Day 5:
+- The problem was taken from hackerrank
+- To solve this problem the concept of Array sorting (Arrays class in java) was used
+- The problem was pretty easy and the main thing was to find suitable algorithm to solve this problem
+
 
