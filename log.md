@@ -15,5 +15,8 @@
 - The problem was taken from hackerrank
 - To solve this problem the concept of Array sorting (Arrays class in java) was used
 - The problem was pretty easy and the main thing was to find suitable algorithm to solve this problem
+# Day 7:
+- Use the Bufferreader class to read input from the console
+- Use this class to claculate the area of the parallelogram
 
 
